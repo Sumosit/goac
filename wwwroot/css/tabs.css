@@ -1,0 +1,91 @@
+.tabs {
+    position: relative; /* Относительное позиционирование */
+    height: 320px;
+}
+
+.tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab-title {
+    color: #d6d6d6;
+    background: rgba(0,0,0,0.1);
+    border: 2px solid #d6d6d6; /* Параметры рамки */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-content {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Размещаем у левого края */
+    width: 100%; /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.tab-content::-webkit-scrollbar {
+    width: 20px;
+}
+.tab-content::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background: rgba(0,0,0,0.6);
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+.tab-content::-webkit-scrollbar-thumb:hover {
+    background: #b2b2b2;
+}
+
+.tab-content::-webkit-scrollbar-track-piece {
+}
+
+.tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: rgba(0,0,0,0.6); /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+     /* Отображаем поверх содержимого */
+}
+
+.tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+}
+
+.tab-content > .w3-row > a > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 5px 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+}
+
+@media screen and (max-width: 801px) {
+    .tab-content > .w3-row > a {
+        width: 30%;
+    }
+}
+
+.w3-row > a {
+    padding: 0.5%;
+}
+
+section > div {
+    padding: 1%;
+}

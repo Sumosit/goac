@@ -1,0 +1,708 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button>
+            <div class="login-back">
+                <div class="login-box">
+                    <form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button> <div class="login-back"><div class="login-box"><form action="/register" method="post"><input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> <h1>Register</h1> <div class="textbox"><label><input type="email" placeholder="Email" name="email"></label></div> <div class="textbox w3-col m12"><label><input type="text" placeholder="Username" name="username"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Password" name="password"></label></div> <div class="textbox w3-col m12"><label><input type="password" placeholder="Re-password" name="passwordConfirm"></label></div> <button type="submit" class="login-btn">Sign up</button> <a href="/login" class="bb">To login</a></form></div></div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="/css/nav.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/css/empty.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+<body>
+    <div class="dark-body">
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+            <footer>
+                <lang id="join-chat-button" class="lang">
+                    <a href="?lang=eng"></a>
+                    <a href="?lang=ru"><span>EN</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 80px">
+                    <a target="_blank" href="/empty"><span>BG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 140px">
+                    <a target="_blank" href="https://vk.com/borialox"><span>VK</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 200px">
+                    <a target="_blank" href="https://twitter.com/KremlinRussia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span>TW</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 260px">
+                    <a target="_blank" href="#"><span>TG</span></a>
+                </lang>
+                <lang id="join-chat-button" class="lang" style="top: 320px">
+                    <a target="_blank" href="https://www.instagram.com/putin.life/?hl=ru"><span>IG</span></a>
+                </lang>
+            </footer>
+            <nav style="position: fixed;" role="navigation" id="mainnav">
+                <br><br><br>
+
+
+                <ul class="gap">
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    <li></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/logout">EXIT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamb" style="position: fixed;">
+                <a><i class="fa fa-bars js-button"></i></a>
+            </div>
+
+            <script type="text/javascript" src="/js/show.js"></script>
+        </div>
+        <div id="app" class="hero">
+            <button class="login-btn">
+                Переключить
+            </button>
+            <div class="login-back">
+                <div class="login-box">
+                    <form action="/register" method="post">
+                    <input type="hidden" name="_csrf" value="34754177-6aa1-442b-88ac-36666c9a8400"> 
+                    <h1>Register</h1> 
+                    <div class="textbox">
+                        <label>
+                        <input type="email" placeholder="Email" name="email"></label>
+                    </div> 
+                    <div class="textbox w3-col m12">
+                        <label><input type="text" placeholder="Username" name="username"></label>
+                    </div> 
+                    <div class="textbox w3-col m12">
+                        <label><input type="password" placeholder="Password" name="password"></label>
+                    </div> 
+                    <div class="textbox w3-col m12">
+                        <label><input type="password" placeholder="Re-password" name="passwordConfirm"></label>
+                    </div> 
+                    <button type="submit" class="login-btn">Sign up</button> 
+                    <a href="/login" class="bb">To login</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <canvas id="bubble" width="1920" height="937"></canvas>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+            <script type="text/javascript" src="/js/bubble.js"></script>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+</body>
+</html>

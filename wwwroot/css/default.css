@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "PathwayGothicOne-Regular";
+    src: url("/font/PathwayGothicOne-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('bg2.1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.dark-body {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 62.5%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-top: 4px solid #eaeaea;
+    border-right: 4px solid #eaeaea;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+}
+
+.search {
+    position: relative;
+    z-index: 1;
+    margin: 30px auto 30px auto;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+}
+
+@media screen and (min-width: 750px) {
+    main {
+        width: 62.5%;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    main {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .search form > input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    .search form > input {
+        width: 185px;
+    }
+}
+
+.search form > input {
+    height: 80%;
+    font-size: 1.5rem;
+    padding: 10px 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+    outline: none;
+}
+
+.search form > button:hover {
+    border-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 20px rgba(255, 255, 255, 0.9);
+    outline: 0 none;
+}
+
+.search form > button {
+    font-size: 1.1rem;
+    padding: 5px 7%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+}
+
+::selection {
+    color: white;
+    background-color: red;
+}
+
+.nolink {
+    font-size: 1.1rem;
+    padding: 5px 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eaeaea;
+    border: 2px solid #eaeaea;
+}
+
+.nolink:hover {
+    border-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 20px rgba(255, 255, 255, 0.9);
+    outline: 0 none;
+}
+
+#join-chat-button-2:hover {
+    -webkit-animation: pulse 0.7s normal; /* анимация и скорость в секундах */
+    animation: pulse 0.7s normal;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 2vw rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 2vw rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 2vw rgba(0, 0, 0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+#join-chat-button:hover {
+    -webkit-animation: rubberBand 0.5s ease; /* анимация и скорость в секундах */
+    animation: rubberBand 0.5s ease;
+}
+@keyframes rubberBand {
+    from {transform: scale(1);}
+    30% {transform: scaleX(1.15) scaleY(0.75);}
+    40% {transform: scaleX(0.75) scaleY(1.25);}
+    60% {transform: scaleX(1.15) scaleY(0.85);}
+    to {transform: scale(1);}
+}
+
+.success {
+    display: none;
+    color: #69ff00;
+}
